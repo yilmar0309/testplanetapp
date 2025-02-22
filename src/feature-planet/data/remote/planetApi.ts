@@ -24,8 +24,7 @@ export const planetApi = createApi({
   }),
   endpoints: (build) => ({
     getAllPlanet: build.query<PlanetModel[], string>({
-      query: (name) =>
-        `${apiPlanetBase.endpoints.planet}?min_temperature=1&max_temperature=100&name=${name}`,
+      query: (name) => `${apiPlanetBase.endpoints.planet}?&name=${name}`,
       transformResponse: (response: PlanetEntity[]) => planetMapper(response),
     }),
   }),

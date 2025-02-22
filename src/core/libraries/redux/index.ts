@@ -2,7 +2,6 @@ import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import loading from "@/core/slices/loadingSlice";
 import region from "@/core/slices/regionSlice";
-import search from "@/core/slices/searchSlice";
 import tab from "@/core/slices/tabSlice";
 import { planetApi } from "@/feature-planet/data/remote/planetApi";
 
@@ -11,7 +10,6 @@ const store = configureStore({
     loading,
     tab,
     region,
-    search,
     [planetApi.reducerPath]: planetApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>

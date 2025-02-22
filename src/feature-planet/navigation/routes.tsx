@@ -20,6 +20,10 @@ export const usePlanetGroupScreens = () => {
             headerTitleAlign: "center",
             headerBackAccessibilityLabel: "false",
             headerBackTitle: "",
+            headerTitleStyle: { color: "#000" },
+            headerStyle: { backgroundColor: "#fff" },
+            headerTintColor: "#000",
+            headerTitleAllowFontScaling: false,
           }}
         />
       </Stack.Group>
